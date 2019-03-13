@@ -1,0 +1,19 @@
+package gradeshistogram;
+
+public class HistogramGenerator {
+
+	public void x() {
+
+	}
+	
+	
+	public static void main (String[] args) {
+		System.out.print("Hello World!");
+		
+		if (args[0] == null) {
+			System.out.print("No file is given!Please give a file as an argument!");
+		}
+		
+	}
+
+}
