@@ -13,7 +13,7 @@
 .metadata
 .mylyn
 
-*.project
-*.lst
-*.classpath
+.project
+.lst
+.classpath
 .settings
