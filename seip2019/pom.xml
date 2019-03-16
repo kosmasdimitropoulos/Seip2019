@@ -5,7 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Seip2019</name>
-  <description>Assignment</description>
+  <description>Assignments for the lab courses of the Seip2019 lesson</description>
   <modules>
   	<module>gradeshistogram</module>
   </modules>
