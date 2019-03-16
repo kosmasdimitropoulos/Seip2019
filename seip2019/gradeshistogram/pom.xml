@@ -8,8 +8,8 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>gradeshistogram</artifactId>
-	<name>Seip2019</name>
-	<description>Assignment</description>
+	<name>HistogramGrades</name>
+	<description>An application that generates a histogram out of students' grades</description>
 	<build>
 		<plugins>
 			<plugin>
