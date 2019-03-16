@@ -5,7 +5,6 @@ import java.io.FileNotFoundException;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartFrame;
 import org.jfree.chart.JFreeChart;
@@ -26,9 +25,9 @@ public class HistogramGenerator {
 	 * is generated with the use of the aforementioned dataset and then
 	 * presented in the screen.
 	 * 
-	 * @param dataValues Single dimension integer array
+	 * @param gradeValues Single dimension integer array
 	 */
-	public void generateChart(ArrayList<Integer> dataValues) {
+	public void generateChart(int[] gradeValues) {
 		/*
 		 * The XYSeriesCollection object is a set XYSeries series (dataset) that
 		 * can be visualized in the same chart
@@ -46,7 +45,7 @@ public class HistogramGenerator {
 		 * values.
 		 */
 		int i = 0;
-		for(int x : dataValues){
+		for(int x : gradeValues){
 			data.add(i, x);
 			i++;
 		}
@@ -97,7 +96,15 @@ public class HistogramGenerator {
 			System.err.println("Error" + e);
 		}
 		
-		ArrayList<Integer> dataValues = new ArrayList<Integer>();
+		/*
+		 * gradeValues is an array of integers, where the grades 
+		 * of the students will be stored  
+		 */
+		
+		int[] gradeValues = new int [11];
+		
+		for (int y = 0; y <= 10; y++)
+			gradeValues[y] = 0;
 		
 		/*
 		 * Initialize an st String variable an check if every
@@ -109,8 +116,8 @@ public class HistogramGenerator {
 		String st;
 		try {
 			while ((st = br.readLine()) != null) {
-				int y = Integer.parseInt(st);
-				dataValues.add(y);
+				int f = Integer.parseInt(st);
+				gradeValues[f]++;
 			}
 		} catch (IOException e) {
 			System.err.println("Error" + e);
@@ -121,7 +128,7 @@ public class HistogramGenerator {
 		 * as to call it from the main method
 		 */
 		HistogramGenerator generateChart = new HistogramGenerator();
-		generateChart.generateChart(dataValues);
+		generateChart.generateChart(gradeValues);
 		
 	}
 }
