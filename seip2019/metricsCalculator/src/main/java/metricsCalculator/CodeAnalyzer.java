@@ -3,6 +3,14 @@ package metricsCalculator;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A class which provides
+ * the functionality of calculating
+ * the 3 metrics of the file given(analyze)
+ * and appending the results into 
+ * a list (metricsConcatenation)
+ * @author kosmasdimitropoulos
+ */
 public class CodeAnalyzer {
 	
 	public void analyze (String pathOfFile, String analysisType, String fileProduced) {

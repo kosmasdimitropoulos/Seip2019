@@ -4,6 +4,15 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * A class which analyzes the file given
+ * into 3 metrics via Regex Analysis:
+ * lines of code (Lines Counter),
+ * number of classes (Classes Counter),
+ * number of methods (Methods Counter)
+ * @author kosmasdimitropoulos
+ *
+ */
 public class RegexAnalyzer implements Analyzer {
 
 	int count;

@@ -8,11 +8,22 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * A class which provides the
+ * functionality of reading and
+ * generating a file.
+ * @author kosmasdimitropoulos
+ */
 public class FileIOUtilities {
 	
 	private FileIOUtilities() {
 	}
 	
+	/**
+	 * A method which reads a file
+	 * and return the number of it's
+	 * lines
+	 */
 	public static List<String> readFile (String filePath) {
 		
 		BufferedReader br = null;
@@ -37,7 +48,10 @@ public class FileIOUtilities {
 		return lines;
 	}
 	
-	
+	/**
+	 * A method which generates a csv file
+	 * with the 3 metrics results
+	 */
 	public static void generateCSVFile(String filePath, List<String> metricsResults) {
 
 		FileWriter writer = null;

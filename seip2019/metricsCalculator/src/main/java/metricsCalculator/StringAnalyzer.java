@@ -2,6 +2,16 @@ package metricsCalculator;
 
 import java.util.List;
 
+
+/**
+ * A class which analyzes the file given
+ * into 3 metrics via String Analysis:
+ * lines of code (Lines Counter),
+ * number of classes (Classes Counter),
+ * number of methods (Methods Counter)
+ * @author kosmasdimitropoulos
+ *
+ */
 public class StringAnalyzer implements Analyzer {
 
 	int count;

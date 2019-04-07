@@ -1,5 +1,12 @@
 package metricsCalculator;
 
+/**
+ * A class which provides the main class
+ * functionality and asks the user to put
+ * the 3 wanted arguments into the cmd when 
+ * executing the .jar file 
+ * @author kosmasdimitropoulos
+ */
 public class AnalyzerDEMO {
 	
 	public static void main(String[] args) {
