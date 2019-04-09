@@ -1,6 +1,8 @@
 package metricsCalculator;
 
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * A class which analyzes the file given
@@ -14,46 +16,53 @@ import java.util.List;
 public class RegexAnalyzer implements Analyzer {
 
 	int count;
-	
+
 	public int LinesCounter (List<String> lines){
-		count = 0;
-		boolean flag = false;
-		
+		this.count = 0;
+		Pattern y = Pattern.compile("(\"^((?!//).)*$\"])");
+		Matcher x;
+
 		for (String c : lines) {
-			
-			if (c.trim().matches("\\s*") || (c.trim().matches("^}") && c.trim().matches("$}"))
-					|| c.trim().matches("$}") || c.trim().matches(".//")
-					|| c.trim().matches("$*/")) {
-				continue;
-			}
-			if (flag == false) {
-				count ++;
+
+			x = y.matcher(c);
+
+			if (!x.matches()) {
+				count++;
 			}
 		}
 		return count;
 	}
-	
+
+
 	public int ClassesCounter (List<String> lines) {
-	count = 0;
+		this.count = 0;
+		Pattern y = Pattern.compile("(((|public|final|abstract|private|static|protected)(\\s+))?(class)(\\s+)(\\w+)(<.*>)?(\\s+extends\\s+\\w+)?(<.*>)?(\\s+implements\\s+)?(.*)?(<.*>)?(\\s*))\\{$");
+		Matcher x;
+
 		for (String c : lines) {
-			if (c.trim().matches("^public class") || c.trim().matches("^final class") 
-					|| c.trim().matches("^abstract class") || c.trim().matches("^class")) { 
-				count ++;
+
+			x = y.matcher(c);
+
+			if (x.matches()) {
+				count++;
 			}
 		}
 		return count;
 	}
-	
-	
+
 	public int MethodsCounter (List<String> lines) {
-		count = 0;
+		this.count = 0;
+		Pattern y = Pattern.compile("((|public|protected|private|static)(\\s+))?[^class]");
+		Matcher x;
+
 		for (String c : lines) {
-			if ((c.trim().matches("^public") && !c.trim().matches("=")) || (c.trim().matches("^static") && !c.trim().matches("="))
-					|| (c.trim().matches("^private") && !c.trim().matches("=")) && c.trim().matches("\\{")) {
+
+			x = y.matcher(c);
+
+			if (x.matches()) {
 				count++;
 			}
 		}
 		return count;
 	}
 }
-
