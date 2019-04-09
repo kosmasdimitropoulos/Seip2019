@@ -8,5 +8,7 @@
   <description>Assignments for the lab courses of the Seip2019 lesson</description>
   <modules>
   	<module>gradeshistogram</module>
+  	<module>metricsCalculator</module>
+  	<module>testingSuite</module>
   </modules>
 </project>
