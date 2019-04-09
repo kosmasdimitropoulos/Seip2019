@@ -6,7 +6,16 @@ A repository for saving all the assignments of the course Software engineering i
 Our first assignment is about evaluating a Java application (.jar file) which gets a text (.txt) file (in our example the grades of some students are given) as an input and produces its histogram. You can learn more about them by visiting the official wikipedia page of [histograms](https://en.wikipedia.org/wiki/Histogram). For more information tap [here](https://github.com/kosmasdimitropoulos/Seip2019/tree/master/seip2019/gradeshistogram)
 
 ## Second Assignment - Metrics Calculator
-Our second assignment is about evaluating a Java application (.jar file) which gets a java (.java) file and a type of Analysis {String or Regex} as an input and calculates some of the java file's metrics such as: Lines of Code, Number of Methods, Number of Classes and produces a .csv file with those three (3) metrics included. The analysis of the file is either being conducted by String or Regex analysis. For more information tap [here](https://github.com/kosmasdimitropoulos/Seip2019/tree/development/seip2019/metricsCalculator)
+Our second assignment is about evaluating a Java application (.jar file) which gets a java (.java) file and a type of Analysis {String or Regex} as an input and calculates some of the java file's metrics such as: Lines of Code, Number of Methods, Number of Classes and produces a .csv file with those three (3) metrics included. The analysis of the file is either being conducted by String or Regex analysis. For more information tap [here](https://github.com/kosmasdimitropoulos/Seip2019/tree/development/seip2019/metricsCalculator).
+
+## Third Assignment - Testing Suite
+Our third assignment is about evaluating a number of Junit tests for some given .java files. The files given are:
+
+* FileIO.java which gets as an input a path of a .txt file with integers and stores it's values into an array.
+* ArrayOperations.java which has two methods, one for finding the max value in an integer array, and another one which reverses the signs of the values stored in the array.
+* IntegerOperations.java which has three methods, one for reversing the sign of an integer, another one for adding two integers and a last one which finds the power of two for some given numbers.
+
+Testing suite, is about evaluating unit tests for all of the functions of the aforementioned .java files. For more information tap [here](https://github.com/kosmasdimitropoulos/Seip2019/tree/development/seip2019/testingSuite).
 
 ## Getting Started
 1. Fork this repository to your own profile.
@@ -23,7 +32,7 @@ Our second assignment is about evaluating a Java application (.jar file) which g
 * Eclipse IDE 2018‑12
 * Java SE Development Kit 8
 * Apache Maven 3.6.0
-* [JFreeChart](https://mvnrepository.com/artifact/org.jfree/jfreechart) for generating the histogram. (Used in Histogram Generator)
+* (More tools are referenced in each module of the project for specific use!)
 
 ## Contributing
 * We are excited about having new pull requests, for evaluating our project!
