@@ -21,7 +21,7 @@ public class FileIOTest {
 	 */
 	@Test
 	public void getvalidInput() {
-		Assert.assertArrayEquals(linesArray, fio.readFile("../testingSuite/src\\test\\resources\\validIntegers.txt"));
+		Assert.assertArrayEquals(linesArray, fio.readFile("src/test/resources/validIntegers.txt"));
 	}
 	
 	/**
@@ -31,7 +31,7 @@ public class FileIOTest {
 	 */
 	@Test (expected = NumberFormatException.class)
 	public void getInvalidInputException() {
-		fio.readFile("..\\testingSuite\\src\\test\\resources\\invalidCharacters.txt");
+		fio.readFile("src/test/resources/invalidCharacters.txt");
 	}
 	
 	@Test (expected = IllegalArgumentException.class)
@@ -41,7 +41,7 @@ public class FileIOTest {
 	
 	@Test (expected = NumberFormatException.class)
 	public void outOfBounds() {
-		fio.readFile("..\\testingSuite\\src\\test\\resources\\bigIntegers.txt");
+		fio.readFile("src/test/resources/bigIntegers.txt");
 	}
 	
 }
