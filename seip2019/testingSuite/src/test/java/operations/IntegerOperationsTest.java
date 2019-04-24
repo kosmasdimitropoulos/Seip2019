@@ -89,4 +89,9 @@ public class IntegerOperationsTest {
 		iop.powerOfTwo(36);
 	}
 	
+	@Test
+	public void test_normalCase() {
+		Assert.assertEquals(70, iop.add(3,67));
+	}
+	
 }
