@@ -7,4 +7,4 @@ jdk:
 before_script: cd seip2019/
 
 script:
- - mvn clean package jacoco:report coveralls:report
+ - mvn clean package jacoco:report
