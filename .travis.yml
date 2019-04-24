@@ -8,3 +8,6 @@ before_script: cd seip2019/
 
 script:
  - mvn clean package jacoco:report
+ 
+ after_success:
+  - bash <(curl -s https://codecov.io/bash) -t 64f2b480-10a6-4b98-b19d-215b6f44a0e9
