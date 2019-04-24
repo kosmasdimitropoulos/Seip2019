@@ -50,6 +50,11 @@ public class IntegerOperationsTest {
 		iop.add(2,-1);
 	}
 	
+	@Test (expected = IllegalArgumentException.class)
+	public void test_getNegativeNumberX_exception() {
+		iop.add(-6,1);
+	}
+	
 	/**
 	 * A test method which checks if the method
 	 * add throws an exception when the sum
@@ -83,5 +88,10 @@ public class IntegerOperationsTest {
 		thrown.expectMessage("^2 causes an integer overflow.");
 		iop.powerOfTwo(36);
 	}
-
+	
+	@Test
+	public void test_normalCase() {
+		Assert.assertEquals(70, iop.add(3,67));
+	}
+	
 }
