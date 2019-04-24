@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/kosmasdimitropoulos/Seip2019.svg?branch=master)](https://travis-ci.org/kosmasdimitropoulos/Seip2019)
+[![Build Status](https://travis-ci.com/kosmasdimitropoulos/Seip2019.svg?token=UWLa1SfqAtsfTS9ZKiPp&branch=master)](https://travis-ci.com/kosmasdimitropoulos/Seip2019)
 
 # Seip2019
 A repository for saving all the assignments of the course Software engineering in practice (2019)
