@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.com/kosmasdimitropoulos/Seip2019.svg?token=UWLa1SfqAtsfTS9ZKiPp&branch=master)](https://travis-ci.com/kosmasdimitropoulos/Seip2019)
-
 [![codecov](https://codecov.io/gh/kosmasdimitropoulos/Seip2019/branch/master/graph/badge.svg?token=Ml82i6SFJP)](https://codecov.io/gh/kosmasdimitropoulos/Seip2019)
 
 # Seip2019
