@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.com/kosmasdimitropoulos/Seip2019.svg?token=UWLa1SfqAtsfTS9ZKiPp&branch=master)](https://travis-ci.com/kosmasdimitropoulos/Seip2019)
 [![codecov](https://codecov.io/gh/kosmasdimitropoulos/Seip2019/branch/master/graph/badge.svg?token=Ml82i6SFJP)](https://codecov.io/gh/kosmasdimitropoulos/Seip2019)
 
-# Seip2019
+# Software Engineering in Practice 2019
 A repository for saving all the assignments of the course Software engineering in practice (2019)
 
 ## First Assignment - Grades Histogram
@@ -41,4 +41,7 @@ Testing suite, is about evaluating unit tests for all of the functions of the af
 * If you wish to contribute raise an issue for us to make the appropriate changes, or submit a pull request!
 
 ## Authors
-* Kosmas Dimitropoulos - Initial work - Github profile(https://github.com/kosmasdimitropoulos)
+* [Kosmas Dimitropoulos](https://github.com/kosmasdimitropoulos) - Initial Work -
+
+## Acknowledgements
+* [Antonis Gkortzis](https://github.com/AntonisGkortzis) - Lab Coordinator & Supervisor -
